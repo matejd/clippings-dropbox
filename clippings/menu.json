@@ -2,9 +2,9 @@
     "items": [
         {"name": "Clippings",
          "items": [
-             {"name": "Start daemon", "exitmenu": false, "action": "bin/daemon_start.sh"},
-             {"name": "Stop daemon", "exitmenu": false, "action": "kill -9 `cat daemon_running` && rm daemon_running"},
-             {"name": "Status", "exitmenu": false, "action": "if [ -e daemon_running ]; then eips \"yes\"; else eips \"no\"; fi"}
+             {"name": "Start daemon", "exitmenu": false, "action": "bin/daemon.sh start"},
+             {"name": "Stop daemon", "exitmenu": false, "action": "bin/daemon.sh stop"},
+             {"name": "Status", "exitmenu": false, "action": "eips \"$(bin/daemon.sh status)\""}
          ]
         }
     ]
