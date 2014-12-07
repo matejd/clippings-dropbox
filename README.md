@@ -10,6 +10,7 @@ to upload the clippings text file to a connected Dropbox account.
 
 Tested on Kindle Paperwhite 2 (firmware 5.4.3.2).
 
+Also includes a Python script that converts My Clippings.txt to CSV format.
 
 Setup
 -----
